@@ -1,48 +1,65 @@
-# Iris Flower Classification
+# Datheon Machine Learning & Data Science Internship
 
-## Project Overview
-This project uses supervised machine learning to classify Iris flowers into three species: Setosa, Versicolor, and Virginica.
+This repository contains machine learning projects completed as part of the Datheon Machine Learning & Data Science Internship.
 
-## Dataset
-- Dataset: Iris flower dataset
-- Total samples: 150
-- Input features: 4
-- Target classes: 3
-- Missing values: None
+## Task 1: Iris Flower Classification
 
-## Technologies Used
+**Objective:** Classify iris flowers into three species using machine learning classification algorithms.
+
+**Dataset:** Iris dataset from Scikit-learn.
+
+**Models Used:**
+- Logistic Regression
+- Decision Tree Classifier
+
+**Evaluation:** Both models achieved 93.33% accuracy on the test dataset.
+
+**Notebook:** `iris_classification.ipynb`
+
+## Task 2: California Housing Price Prediction
+
+**Objective:** Predict median house values using housing-related features.
+
+**Dataset:** California Housing dataset from Scikit-learn.
+
+**Steps Performed:**
+- Data exploration and visualization
+- Missing-value and duplicate checks
+- Train-test split
+- Polynomial interaction feature generation
+- Imputation and feature scaling
+- Regression model training and evaluation
+
+**Models Used:**
+- Ordinary Least Squares (OLS) Linear Regression
+- Ridge Regression
+- Lasso Regression
+
+**Test Results:**
+
+| Model | RMSE | MAE | R² |
+|---|---:|---:|---:|
+| OLS | 0.7033 | 0.4809 | 0.6225 |
+| Ridge | 0.7440 | 0.5202 | 0.5776 |
+| Lasso | 0.7514 | 0.5329 | 0.5692 |
+
+OLS achieved the best test-set performance among the three evaluated models.
+
+**Notebook:** `housing_price_prediction.ipynb`
+
+## Tools and Libraries
+
 - Python
-- Pandas
-- Matplotlib
-- Seaborn
+- Pandas and NumPy
+- Matplotlib and Seaborn
 - Scikit-learn
 - Google Colab
+- GitHub
 
-## Machine Learning Models
-1. Logistic Regression
-2. Decision Tree Classifier
+## Repository Contents
 
-## Methodology
-1. Loaded and explored the dataset.
-2. Visualized feature relationships using a pairplot.
-3. Split the dataset into 80% training data and 20% testing data.
-4. Applied StandardScaler to the features.
-5. Trained and evaluated both classification models.
-6. Compared accuracy, precision, recall, and F1-score.
-7. Visualized predictions using confusion matrix heatmaps.
+- `iris_classification.ipynb` — Iris classification notebook
+- `housing_price_prediction.ipynb` — California Housing regression notebook
+- `README.md` — Project documentation
 
-## Results
 
-| Model | Accuracy | Precision | Recall | F1-score |
-|---|---:|---:|---:|---:|
-| Logistic Regression | 93.33% | 93.33% | 93.33% | 93.33% |
-| Decision Tree | 93.33% | 93.33% | 93.33% | 93.33% |
-
-## How to Run
-Open `iris_classification.ipynb` in Google Colab or Jupyter Notebook and run the cells in order.
-
-## Conclusion
-Both models achieved 93.33% accuracy on the test set. Their performance was identical for this particular train-test split.
-
-## Author
-Atchaya K
