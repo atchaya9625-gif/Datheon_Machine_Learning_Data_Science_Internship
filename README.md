@@ -84,6 +84,31 @@ OLS achieved the best test-set performance among the three evaluated models.
 **Notebook:** `customer_churn_prediction.ipynb`
 
 ## Repository Contents
+### Task 4: NLP Sentiment Classification
+
+**Objective:** Classify customer reviews as positive or negative using Natural Language Processing (NLP).
+
+**Dataset:** Yelp reviews dataset containing review text and star ratings. Three-star reviews were excluded; 1–2 star reviews were labelled Negative and 4–5 star reviews were labelled Positive.
+
+**Preprocessing and Methods:**
+- Text vectorization using TF-IDF
+- 80/20 stratified train-test split
+- Multinomial Naive Bayes
+- Logistic Regression
+- Evaluation using Accuracy, Precision, Recall, F1-score, Confusion Matrix, and ROC-AUC
+- Custom function to predict sentiment for new reviews
+
+**Results:**
+
+| Metric | Multinomial Naive Bayes | Logistic Regression |
+|---|---:|---:|
+| Accuracy | 80.80% | 90.11% |
+| F1-score | 0.8933 | 0.9375 |
+| ROC-AUC | 0.9061 | 0.9545 |
+
+**Best-performing model:** Logistic Regression, with 90.11% accuracy and 0.9545 ROC-AUC.
+
+**Notebook:** `sentiment_classification.ipynb`
 
 - `iris_classification.ipynb` — Iris classification notebook
 - `housing_price_prediction.ipynb` — California Housing regression notebook
