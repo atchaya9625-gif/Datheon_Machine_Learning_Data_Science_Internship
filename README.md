@@ -56,6 +56,33 @@ OLS achieved the best test-set performance among the three evaluated models.
 - Google Colab
 - GitHub
 
+## Task 3: Customer Churn Prediction
+
+**Objective:** Predict customer churn using supervised machine learning classification models.
+
+**Dataset:** IBM Telco Customer Churn dataset containing 7,043 customer records.
+
+**Data Preprocessing:**
+- Converted `TotalCharges` to numeric format and handled missing values.
+- Applied One-Hot Encoding to categorical features.
+- Used stratified train-test splitting (80:20).
+- Applied class weighting to address class imbalance.
+
+**Models Used:**
+- Random Forest Classifier
+- XGBoost Classifier
+
+**Model Evaluation Results:**
+
+| Model | Accuracy | Precision | Recall | F1-score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Random Forest | 78.42% | 62.24% | 47.59% | 0.5394 | 0.8223 |
+| XGBoost | 76.08% | 53.36% | 78.61% | 0.6357 | 0.8454 |
+
+**Best ROC-AUC:** XGBoost achieved 0.8454 on the test set.
+
+**Notebook:** `customer_churn_prediction.ipynb`
+
 ## Repository Contents
 
 - `iris_classification.ipynb` — Iris classification notebook
